@@ -1,0 +1,14 @@
+import: 
+  - recipe/laravel.php
+
+config:
+  repository: ''
+
+hosts:
+
+tasks:
+  build:
+    - run: uptime  
+
+after:
+  deploy:failed: deploy:unlock
