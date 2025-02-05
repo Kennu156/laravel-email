@@ -55,7 +55,7 @@ class TimetableNotification extends Command
         ->values();
  
     //return $data;
-    Mail::to('hello@example.ee')->send(new Timetable($data));
+    Mail::to('kenmarttipaju@gmail.com')->send(new Timetable($data));
  
     } 
 }
