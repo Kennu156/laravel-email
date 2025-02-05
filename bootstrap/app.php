@@ -16,7 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withSchedule(function ($schedule) {
-        $schedule->command('app:timetable-notification')->wednesdays();
+        $schedule->command('app:timetable-notification')->weeklyOn(7, '8:00')->timezone('Europe/Tallinn');
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
