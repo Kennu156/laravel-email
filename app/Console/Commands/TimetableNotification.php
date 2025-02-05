@@ -33,8 +33,8 @@ class TimetableNotification extends Command
 {
     //https://tahvel.edu.ee/hois_back/timetableevents/timetableByGroup/38?from=2023-10-30T00:00:00Z&studentGroups=5901&thru=2023-11-05T00:00:00Z
     $response = Http::get('https://tahvel.edu.ee/hois_back/timetableevents/timetableByGroup/38', [
-        'from' => now()->startOfWeek()->toIsoString(),
-        'thru' => now()->endOfWeek()->toIsoString(),
+        'from' => now()->addWeek()->startOfWeek()->toIsoString(),
+        'thru' => now()->addWeek()->endOfWeek()->toIsoString(),
         'studentGroups' => '7596',
     ]);
  
