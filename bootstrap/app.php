@@ -16,7 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withSchedule(function ($schedule) {
-        $schedule->command('app:timetable-notification')->everySecond();
+        $schedule->command('app:timetable-notification')->wednesdays();
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

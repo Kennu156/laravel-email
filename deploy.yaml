@@ -7,9 +7,9 @@ config:
 hosts:
   stage:
     hostname: 'tak23paju.itmajakas.ee'
-    http_user: # virt****
-    remote_user: # virt****
-    deploy_path: '' # ~/domeenid/www.sinudomeen.itmajakas.ee/path-to-app
+    http_user: 'virt124161'
+    remote_user: 'virt124161'
+    deploy_path: '~/domeenid/www.tak23paju.itmajakas.ee/tunniplaan'
 
 tasks:
 
